@@ -1,0 +1,111 @@
+body {
+  background-image: url("assets/fundo-carro.jpg");
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.balao,
+.balao-2,
+.balao-3 {
+  position: relative;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.balao::before,
+.balao-2::before,
+.balao-3::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f2f2f2 transparent;
+}
+
+.texto-balao-1,
+.texto-balao-2,
+.texto-balao-3 {
+  background-color: #695454;
+  border-radius: 5px;
+  margin: auto;
+  color: #ff8800c9;
+}
+
+.balao-dr-1 {
+  margin-top: 215px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 280px;
+  background-color: #4caf50;
+}
+
+.balao-dr-1::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+}
+
+.texto-balao-4 {
+  border-radius: 5px;
+  margin: auto;
+  background-color: #45a049;
+}
